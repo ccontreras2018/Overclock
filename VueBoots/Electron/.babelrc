@@ -1,0 +1,46 @@
+{
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env", {
+            "targets": { "node": 12 }
+          }
+        ]
+      ],
+      "plugins": ["istanbul"]
+    },
+    "main": {
+      "presets": [
+        [
+          "@babel/preset-env", {
+            "targets": { "node": 12 }
+          }
+        ]
+      ]
+    },
+    "renderer": {
+      "presets": [
+        [
+          "@babel/preset-env", {
+            "modules": false
+          }
+        ]
+      ]
+    },
+    "web": {
+      "presets": [
+        [
+          "@babel/preset-env", {
+            "modules": false
+          }
+        ]
+      ]
+    }
+  },
+  "plugins": [
+    "@babel/transform-runtime",
+    "@babel/plugin-syntax-dynamic-import"
+  ]
+}
