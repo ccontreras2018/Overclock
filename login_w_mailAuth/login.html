@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
     <head>
         <meta charset="utf-8">
-        <title>Registrar</title>
+        <title>Login</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="regstyle.css">      
     </head>
-
-    
     <body>
 		<main>
-			
 			<nav>
 				<h1>Login</h1>
                 <ul class="menu">
@@ -20,11 +15,10 @@
                     <li><a href="register.html">Registro</a></li>
                 </ul>
 			</nav>
-            
             <section>
                 <h5>Introduzca sus credenciales</h5>
-                <!--Las credenciales se validan en validate.php-->
-                <form action="validate.php" method="post">
+                <!--Las credenciales se validan en logVal.php-->
+                <form action="logVal.php" method="post">
                     
                     <input type="email" id="mail" name="mail" placeholder="ejemplo@correo.com">
 	                     <br>
@@ -32,14 +26,10 @@
                     <input type="submit">
                 </form>
             </section>
-			
             <footer>
 				<p>Copyright</p>
 				<p>Contacto</p>
 			</footer>
-			
 		</main>
-    
     </body>
-
 </html>

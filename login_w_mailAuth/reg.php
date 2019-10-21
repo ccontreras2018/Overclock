@@ -20,6 +20,6 @@
 	$manager->executeBulkWrite('alpha.kollektsiya', $bulk);
 		
 		
-	header('Refresh: 3;URL=index.html');
+	header('Refresh: 1;URL=index.html');
     
 ?>

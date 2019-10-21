@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Placeholder</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="regstyle.css">
+	    <script src="jquery.js"></script>
+        <script>
+            function validate(objForm)
+            {
+                if (this.authkey.value == "")
+                {
+                    alert("No puede dejar este campo en blanco");
+					this.fnam.focus();
+					return false;    
+                }              
+            }
+            
+        </script>
+    </head>
+    <body>
+		<main>
+			<nav>
+				<h1>Autentificacion</h1>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+			</nav>
+            <section>
+                <h4>Verificacion de usuario</h4>
+                <form action="valToken.php" method="post" onsubmit="return validate(this)">
+                    <p>Busque en su bandeja de correos el codigo de verificacion</p>
+                    <p>Es posible que se encuentre en su bandeja de SPAM</p>
+                    <input type="text" id="authkey" name="authkey" placeholder="Codigo">
+                    
+                    <input type="submit">
+                </form>
+            </section>
+            <footer>
+				<p>Copyright</p>
+				<p>Contacto</p>
+			</footer>	
+		</main> 
+    </body>
+</html>
