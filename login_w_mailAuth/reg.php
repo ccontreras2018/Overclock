@@ -17,7 +17,7 @@
 				   'Passwd' => $hpass,
 				   'isAdmin' => false,
 				   ]);
-	$manager->executeBulkWrite('alpha.kollektsiya', $bulk);
+	$manager->executeBulkWrite('overclock.users', $bulk);
 		
 		
 	header('Refresh: 1;URL=index.html');

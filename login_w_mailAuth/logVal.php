@@ -9,7 +9,7 @@ $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
 $filter = ['Mail' => $mail];
 $options = [];
 $query = new MongoDB\Driver\Query($filter, $options);
-$cursor = $manager->executeQuery('alpha.kollektsiya', $query);
+$cursor = $manager->executeQuery('overclock.users', $query);
 
 foreach($cursor as $k => $row){
     $varX = json_encode($row);
@@ -48,7 +48,7 @@ if(password_verify($passw, $hash)) {
     else {
         $_SESSION['state'] = "USER"; 
     }
-    header("Refresh: 3;URL=auth.html");
+    header("Refresh: 1;URL=auth.html");
 }
 else {
     echo "Credenciales invalidas";
